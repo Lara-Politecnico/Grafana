@@ -7,9 +7,32 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1"
+   sodipodi:docname="sistema_fotovoltaico.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.65477694"
+     inkscape:cx="397.08179"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <pattern
@@ -91,6 +114,17 @@
          style="stroke-width:2"
          id="path18-7" />
     </symbol>
+    <symbol
+       id="FlowSymbols.svg:Merge">
+      <title
+         id="title7">Merge</title>
+      <desc
+         id="desc7">Combine two or more sets of items into one set. (ISO)</desc>
+      <path
+         d="m 35,35 h 80 l -40,70 z"
+         style="stroke-width:2"
+         id="path7-4" />
+    </symbol>
   </defs>
   <g
      id="layer1">
@@ -118,5 +152,10 @@
        style="fill:url(#pattern15);fill-opacity:1;stroke:#000000;stroke-width:15.01840503;stroke-dasharray:none;stroke-opacity:1;stroke-dashoffset:0"
        id="battery"
        transform="matrix(0.3863569,0,0,0.3728322,79.115068,197.11105)" />
+    <use
+       xlink:href="#FlowSymbols.svg:Merge"
+       style="fill:#aaccee;stroke:#000000"
+       id="inverter"
+       transform="matrix(0.48246403,0,0,0.48048861,71.907035,238.27078)" />
   </g>
 </svg>
