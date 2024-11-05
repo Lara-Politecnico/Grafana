@@ -1,0 +1,49 @@
+elements:
+  - id: generator
+    title: "Generatore FV"
+    value: ${potenza_fv}  # Placeholder, sostituisci con ${potenza_fv} se configurato
+    unit: "W"
+    position: [100, 100]
+    color: "green"
+  - id: battery
+    title: "Batterie"
+    value: ${potenza_batteria}  # Placeholder, sostituisci con ${battery_charge} se configurato
+    unit: "W"
+    position: [300, 200]
+    color: "blue"
+  - id: inverter
+    title: "Inverter"
+    value: ${p_ac_set}  # Placeholder, sostituisci con ${inverter_output} se configurato
+    unit: "W"
+    position: [500, 100]
+    color: "orange"
+  - id: load
+    title: "Carichi"
+    value: ${potenza_ac_out}  # Placeholder, sostituisci con ${load_power} se configurato
+    unit: "W"
+    position: [700, 200]
+    color: "red"
+  - id: grid
+    title: "Rete"
+    value: ${potenza_ac_in}  # Placeholder, sostituisci con ${grid_flow} se configurato
+    unit: "W"
+    position: [900, 100]
+    color: "purple"
+
+connections:
+  - from: generator
+    to: inverter
+    label: "Produzione"
+    color: "green"
+  - from: inverter
+    to: battery
+    label: "Caricamento Batterie"
+    color: "blue"
+  - from: inverter
+    to: load
+    label: "Alimentazione Carichi"
+    color: "orange"
+  - from: inverter
+    to: grid
+    label: "Iniezione Rete"
+    color: "purple"
